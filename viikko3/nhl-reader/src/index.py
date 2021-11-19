@@ -1,14 +1,13 @@
 from player import Player
 
 import requests
+import datetime
 
 
 def main():
     url = "https://nhlstatisticsforohtu.herokuapp.com/players"
     response = requests.get(url).json()
-
-    print("JSON-muotoinen vastaus:")
-
+    
     players = []
 
     for player_dict in response:
@@ -24,9 +23,13 @@ def main():
 
         players.append(player)
 
-    print("Oliot:")
+    nat = 'FIN'
+    
+    print(f'{nat} players from {datetime.datetime.now()}')
 
-    for player in players:
+    filtered = filter(lambda p: p.nationality == nat, players)
+
+    for player in filtered:
         print(player)
 
 
