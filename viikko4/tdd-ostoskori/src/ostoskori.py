@@ -8,7 +8,7 @@ class Ostoskori:
         self.ostokset_list = []
 
     def tavaroita_korissa(self):
-        return len(self.ostokset_list)
+        return sum(map(lambda o: o.lukumaara(), self.ostokset_list))
         # kertoo korissa olevien tavaroiden lukumäärän
         # eli jos koriin lisätty 2 kpl tuotetta "maito", tulee metodin palauttaa 2 
         # samoin jos korissa on 1 kpl tuotetta "maito" ja 1 kpl tuotetta "juusto", tulee metodin palauttaa 2 
@@ -19,6 +19,10 @@ class Ostoskori:
 
     def lisaa_tuote(self, lisattava: Tuote):
         # lisää tuotteen
+        for ostos in self.ostokset_list:
+            if ostos.tuote == lisattava:
+                ostos.muuta_lukumaaraa(1)
+                return
         self.ostokset_list.append(Ostos(lisattava))
 
     def poista_tuote(self, poistettava: Tuote):
