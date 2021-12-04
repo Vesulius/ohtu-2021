@@ -1,0 +1,5 @@
+## Viikko 5 tehtävä 6
+
+Start, Stop, Continue, More of, Less of Wheel on retrospektiivitekniikka jossa palaute aikaisemmalta sprintiltä asetetaan ympyrään, joka on jaettu viiteen kategoriaan jotka on nimetty tekniikan nimen mukaan. Tarkoitus käyttää ympyrän kategorioita keskustelun johtamiseen laajan palautteen saamiseksi.
+
+Glad, Mad, Sad on myös retrospektiivitekniikka. Siinä kuluneesta sprintistä kerätään mielipiteita, ajatuksia ja kritiikkiä yhdessä tiimin kesken. Tämä palaute sitten jaetaan kolmeen kategoriaan, iloiseen, surulliseen ja vihaiseen. Retrospektiiviin osallistuu koko kehittäjätiimi. Tiimiläiset kirjoittavat palautteen muistilapuille, jotka sitten asetetaan tauluun joka on jaettu kategorioihin. Seuraavaksi samankaltaiset palautteet siirretään seuraavaksi lähelle toisiaan taululla. Tämän jälkeen tiimiläiset äänestävät mitkä kategorioista ovat tärkeimipä, jolloin keskustelu alkaa eniten ääniä saaneista. Tämän aikana tiimiläiset keskustelevat mitä voisivat muuttaa seuraavaan sprinttiin. Tekniikan tarkoitus on luoda monipuolisempaa palautetta kategorioiden avulla ja saada koko tiimi tietoiseksi mahdollisista parannusehdotuksista. 
