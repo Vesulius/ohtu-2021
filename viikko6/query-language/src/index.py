@@ -9,12 +9,18 @@ def main():
     reader = PlayerReader(url)
     stats = Statistics(reader)
 
-    query = QueryBuilder(All())
+    query = QueryBuilder()
     matcher = (
         query
-        .playsIn("NYR")
-        .hasFewerThan(10, "goals")
-        .hasAtLeast(5, "goals")
+        .oneOf(
+            query.playsIn("PHI")
+            .hasAtLeast(10, "assists")
+            .hasFewerThan(5, "goals")
+            .build(),
+            query.playsIn("EDM")
+            .hasAtLeast(40, "points")
+            .build()
+        )
         .build()
     )
 
