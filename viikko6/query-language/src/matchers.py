@@ -51,6 +51,9 @@ class HasFewerThan:
 
 
 class All:
+    def __init__(self):
+        pass
+
     def matches(self, player):
         return True
 
